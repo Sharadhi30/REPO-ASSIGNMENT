@@ -1,0 +1,53 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories Listing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">GitHub Repositories Listing Page</h1>
+
+        <div class="row">
+            <!-- Left Column: User Profile -->
+            <div class="col-md-4">
+                <div class="search-container mb-3">
+                    <div class="input-group">
+                        <input type="text" id="username" class="form-control" placeholder="Search Here">
+                        <div class="input-group-append">
+                            <button onclick="loadUserData()" class="btn btn-primary" type="button">Load</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="repos-per-page">Repositories Per Page:</label>
+                    <select id="repos-per-page" class="form-control">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <div id="loader" class="loader"></div>
+                <div id="profile" class="profile-container"></div>
+            </div>
+
+            <!-- Right Column: User Repositories -->
+            <div id="repositories" class="col-md-8 repositories-container row"></div>
+            <div id="page-slider" class="col-md-10 page-slider"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("./images/backgroundimg.jpg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 40px;
+    
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+}
+
+#username {
+    flex: 1;
+}
+
+.loader {
+    border: 5px solid rgb(160, 160, 175);
+    border-radius: 50%;
+    width: 50px;
+    height: 70px;
+    margin: 20px auto;
+    display: none;
+    border-top: 16px solid  rgb(160, 160, 175);
+    border-bottom: 16px solid   rgb(160, 160, 175);
+}
+
+.profile-container,
+.repositories-container,
+.page-slider {
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+
+.btn {
+    width: 75px;
+    height: 40px;
+    background-color: rgb(255, 140, 0);
+    color: black;
+    margin: 4px;
+    margin-top: 1px;
+    margin-left: 20px;
+    
+}
+
+.repositories-container{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+.profile-container{
+    margin-left: 6px;
+}
+
+.username {
+    
+    margin-left: 40px;
+    color: rgb(116, 112, 112);
+}
+
+.full-name {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 4800;
+    font-size: 30px;
+}
+.location {
+    color:white;
+}
+.bio {
+    color: white;
+}
+
+.twitter a{
+    color: white;
+}
+
+.twitter img {
+    width: 30px;
+    height: 30px;
+}
+
+.location img {
+    width: 30px;
+    height: 30px;
+}
+
+.github img{
+    width: 30px;
+    height: 30px;
+
+}
+.github {
+    color: white;
+}
+
+/* Additional styles for repositories */
+.repository {
+    margin-bottom: 10px;
+}
+
+/* Additional styles for pagination */
+.page-slider button {
+    margin: 0 5px;
+}
+
+.card-body a{
+    width: 90px ;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    
+    
+    
+
+}
+
+.card-body{
+    width: 200px;
+    height: 250px;
+    padding-right: 0.1px;
+    margin-top: 0.1px;
+    
+    
+}
+
+.page-slider {
+    margin-bottom: 10px;
+    
+
+    
+}
+
+
+
+.card-text{
+    font-size: 10px;
+    text-align: justify;
+      
+}
+
+.row label{
+    color:rgb(116, 112, 112);
+    font-size: 15px;
+}
